@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(233, 195, 233);
+  margin: 0 50px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section {
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 10px 10px;
+}
+.container {
+  background-color: rgba(128, 128, 128, 0.564);
+  width: 100px;
+  height: 100px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(191, 70, 191, 0.792);
+  transition: all linear 1s;
+}
+section:nth-child(1) .container:hover .box {
+  transform: rotate(45deg);
+}
+section:nth-child(2) .container:hover .box {
+  transform: rotatex(45deg);
+}
+section:nth-child(3) .container:hover .box {
+  transform: rotateY(45deg);
+}
+section:nth-child(4) .container:hover .box {
+  transform: scale(1.5);
+}
+section:nth-child(5) .container:hover .box {
+  transform: scaleX(1.5);
+}
+section:nth-child(6) .container:hover .box {
+  transform: scaley(1.5);
+}
+section:nth-child(7) .container:hover .box {
+  transform: skewX(45deg);
+}
+section:nth-child(8) .container:hover .box {
+  transform: skewY(45deg);
+}
+section:nth-child(9) .container:hover .box {
+  transform: translate(50%, 10px);
+}
+section:nth-child(10) .container:hover .box {
+  transform: translatex(50%);
+}
+.wrapper:nth-child(2) section:nth-child(1) .container:hover .box {
+  transform: translatey(50%);
+}
+.wrapper:nth-child(2) section:nth-child(2) .container:hover .box {
+  transform: scale(1.5) skewy(45deg) translate(15px, -15px);
+}
+.wrapper:nth-child(3) section:nth-child(1) .container:hover .box {
+  transform: perspective(100px) rotatex(45deg);
+}
+.wrapper:nth-child(3) section:nth-child(2) .container:hover .box {
+  transform: perspective(100px) rotatey(45deg);
+}
+.wrapper:nth-child(4) section:nth-child(1) .container .box {
+  transform-origin: top right;
+}
+.wrapper:nth-child(4) section:nth-child(1) .container:hover .box {
+  transform: rotate(45deg);
+}
+.wrapper:nth-child(4) section:nth-child(2) .container .box {
+  transform-origin: bottom left;
+}
+.wrapper:nth-child(4) section:nth-child(2) .container:hover .box {
+  transform: rotate(45deg);
+}
+.wrapper:nth-child(4) section:nth-child(3) .container .box {
+  transform-origin: bottom;
+}
+.wrapper:nth-child(4) section:nth-child(3) .container:hover .box {
+  transform: perspective(100px) rotatex(30deg);
+}
+.wrapper:nth-child(4) section:nth-child(4) .container .box {
+  transform-origin: top;
+}
+.wrapper:nth-child(4) section:nth-child(4) .container:hover .box {
+  transform: perspective(200px) rotatex(60deg);
+}
+.wrapper:nth-child(4) section:nth-child(5) .container .box {
+  transform-origin: left;
+}
+.wrapper:nth-child(4) section:nth-child(5) .container:hover .box {
+  transform: perspective(200px) rotatey(30deg);
+}
+.wrapper:nth-child(4) section:nth-child(6) .container .box {
+  transform-origin: right;
+}
+.wrapper:nth-child(4) section:nth-child(6) .container:hover .box {
+  transform: perspective(200px) rotatey(60deg);
+}
+.wrapper:nth-child(4) section:nth-child(7) .container .box {
+  transform-origin: top right;
+}
+.wrapper:nth-child(4) section:nth-child(7) .container:hover .box {
+  transform: scale(1.5);
+}
+.wrapper:nth-child(4) section:nth-child(8) .container .box {
+  transform-origin: bottom left;
+}
+.wrapper:nth-child(4) section:nth-child(8) .container:hover .box {
+  transform: scale(1.5);
+}
+.wrapper:nth-child(4) section:nth-child(9) .container .box {
+  transform-origin: right;
+}
+.wrapper:nth-child(4) section:nth-child(9) .container:hover .box {
+  transform: scalex(2);
+}
+.wrapper:nth-child(4) section:nth-child(10) .container .box {
+  transform-origin: left;
+}
+.wrapper:nth-child(4) section:nth-child(10) .container:hover .box {
+  transform: scalex(2);
+}
+.wrapper:nth-child(5) section:nth-child(1) .container .box {
+  transform-origin: top;
+}
+.wrapper:nth-child(5) section:nth-child(1) .container:hover .box {
+  transform: scaley(2);
+}
+.wrapper:nth-child(5) section:nth-child(2) .container .box {
+  transform-origin: bottom;
+}
+.wrapper:nth-child(5) section:nth-child(2) .container:hover .box {
+  transform: scaley(2);
+}
